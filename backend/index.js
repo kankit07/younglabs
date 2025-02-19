@@ -11,7 +11,7 @@ app.use(
     allowedHeaders: ["Content-Type", "Authorization"],
   }),
 );
-
+app.use(express.json());
 const PORT = process.env.PORT || 5001;
 
 /**

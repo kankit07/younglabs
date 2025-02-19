@@ -12,7 +12,14 @@ function App() {
 
     try {
       const response = await fetch(
-        `https://younglabs-backend.onrender.com/api/greet?name=${name}`,
+        `https://younglabs-1.onrender.com/api/greet?name=${name}`,
+        {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        },
       );
       const data = await response.json();
       console.log(data);
