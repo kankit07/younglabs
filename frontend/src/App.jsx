@@ -11,7 +11,9 @@ function App() {
     setError("");
 
     try {
-      const response = await fetch(`/api/greet?name=${name}`);
+      const response = await fetch(
+        `https://younglabs-backend.onrender.com/api/greet?name=${name}`,
+      );
       const data = await response.json();
       console.log(data);
 

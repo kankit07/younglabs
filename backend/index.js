@@ -5,10 +5,7 @@ const cors = require("cors");
 
 app.use(
   cors({
-    origin: [
-      "https://vercel.com/kankit07s-projects/younglabs/3N7CHGFLAkuuPAD1KLCGtAStv18X",
-      "http://localhost:3000",
-    ],
+    origin: ["https://younglabs.vercel.app/", "http://localhost:5173"],
     methods: ["GET", "POST", "PUT", "DELETE"],
   }),
 );
