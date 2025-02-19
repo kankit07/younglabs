@@ -3,7 +3,15 @@ const app = express();
 
 const cors = require("cors");
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://vercel.com/kankit07s-projects/younglabs/3N7CHGFLAkuuPAD1KLCGtAStv18X",
+      "http://localhost:3000",
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  }),
+);
 
 const PORT = process.env.PORT || 5001;
 

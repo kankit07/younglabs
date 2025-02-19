@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "http://localhost:5001", // Backend server URL
+        target: "https://younglabs-1.onrender.com", // Backend server URL
         changeOrigin: true,
       },
     },
